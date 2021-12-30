@@ -1,4 +1,6 @@
-package domain;
+package manager;
+
+import domain.Post;
 
 public class Wall {
     private PostManager postManager;
