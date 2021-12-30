@@ -1,8 +1,21 @@
 package domain;
 
 public class Post {
-    private String PostTitle;
+    private int id;
+    private int ownerId;
+    private String postTitle;
     private String authorOfPost;
+
+    {
+        int idOfAuthor;
+    }
+
+    private String dateOfPost;
+
+    {
+        int date;
+    }
+
     private String settingsOfPost;
 
     {
@@ -12,16 +25,21 @@ public class Post {
         String notifyAboutEntries;
     }
 
-    private String description;
+    private String text;
     private String image;
     private String link;
     private String likes;
 
     {
-        int like;
+        int countLike;
+        boolean userLike;
     }
 
     private String comments;
+
+    {
+        int CountComment;
+    }
 
     {
         String showFirst;
@@ -33,12 +51,22 @@ public class Post {
         String showComments;
         {
             String authorOfComment;
+            {
+                int idAuthorOfComment;
+            }
             String complain;
-            String comment;
+            String textOfComment;
             String timeOfWriting;
+            {
+                int time;
+            }
             String answer;
             String toShare;
             String likesOfComment;
+            {
+                int countLikeComment;
+                boolean userLikeComment;
+            }
             String ShowTheFollowing;
         }
         String userLink;
@@ -60,12 +88,13 @@ public class Post {
     private String reposts;
 
     {
-        int repost;
+        int countReposts;
+        boolean user_reposted;
     }
 
     private String viewing;
 
     {
-        int view;
+        int countView;
     }
 }
