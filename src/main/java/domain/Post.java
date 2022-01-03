@@ -3,98 +3,30 @@ package domain;
 public class Post {
     private int id;
     private int ownerId;
-    private String postTitle;
-    private String authorOfPost;
-
-    {
-        int idOfAuthor;
-    }
-
-    private String dateOfPost;
-
-    {
-        int date;
-    }
-
-    private String settingsOfPost;
-
-    {
-        String itIsNotInteresting;
-        String saveToBookmarks;
-        String complain;
-        String notifyAboutEntries;
-    }
-
+    private int fromId;
+    private int createdBy;
+    private int date;
     private String text;
-    private String image;
-    private String link;
-    private String likes;
+    private int replyOwnerId;
+    private int replyPostId;
+    private boolean friendsOnly;
+    private Comments comments;
+    private CopyRight copyRight;
+    private Likes likes;
+    private Reposts reposts;
+    private Views views;
+    private String postType;
+    private PostSource postSource;
+    private Geo geo;
+    private int signerId;
+    private boolean canPin;
+    private boolean canDelete;
+    private boolean canEdit;
+    private boolean isPinned;
+    private boolean markedAsAds;
+    private boolean isFavorite;
+    private Donut donut;
+    private int postponedId;
 
-    {
-        int countLike;
-        boolean userLike;
-    }
 
-    private String comments;
-
-    {
-        int CountComment;
-    }
-
-    {
-        String showFirst;
-        {
-            String firstInteresting;
-            String firstNews;
-            String firstOlds;
-        }
-        String showComments;
-        {
-            String authorOfComment;
-            {
-                int idAuthorOfComment;
-            }
-            String complain;
-            String textOfComment;
-            String timeOfWriting;
-            {
-                int time;
-            }
-            String answer;
-            String toShare;
-            String likesOfComment;
-            {
-                int countLikeComment;
-                boolean userLikeComment;
-            }
-            String ShowTheFollowing;
-        }
-        String userLink;
-        String addComment;
-        {
-            String addMediaFile;
-            {
-                String addPhoto;
-                String addVideoRecording;
-                String addAudioRecording;
-                String addFile;
-            }
-            String addPhoto;
-            String smileFaces;
-            String sendComment;
-        }
-    }
-
-    private String reposts;
-
-    {
-        int countReposts;
-        boolean user_reposted;
-    }
-
-    private String viewing;
-
-    {
-        int countView;
-    }
 }
